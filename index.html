@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/car.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>Car game</title>
+</head>
+<body>
+    <div class="container-fluid  m-0 p-0">
+        <div class="row row__style" id='home'>
+            <h2 clsss='text-center'>Car game <i class="fas fa-car" aria-hidden="true"></i></h2>
+            <div>
+          <button class="game__button" id='start'>Start</button></div>
+        <div>
+          <button class="game__button" id='guide' data-toggle="modal" data-target="#exampleModal">Guide</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Instructions</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Press start button to start the Game</li>
+                        <li>Car can be moved in steps,press the Go button to move Forward </li>
+                        <li>You will get 20 Litre petrol on reaching every petrol pump </li>
+                        <li>Play the game in full screen mode </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row row__style hide" id='reached'><h3>Reached</h3></div>
+        <div class="row row__style hide" id='gameover'><h3>Game Over</h3></div>
+        <div class="row hide m-0 game__div" id='gamearea'>
+         
+            <div class="col-12">
+                <div class="d-flex justify-content-between "><span><i class="fas fa-road"></i> Distance &nbsp;<span id='distance'> 0</span> Km</span><span> <i class="fas fa-gas-pump "></i> Petrol &nbsp;<span id='petrol'> 30 </span> L</span><span> <i class="fas fa-walking"></i> Moves &nbsp;<span id='moves'> 0</span></span></div>
+                <div class="mt-5 text-center"><button  class='btn btn-sm main__btn'>Go</button</div>
+            </div>
+           <div class="col-12" id='petroldiv'></div>
+                <img class="car__img" id='car' src="./images/car.png" alt="">
+        </div>
+
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.row__style {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.game__button {
+  padding: 9px 40px 11px;
+  background-color: #ff7f50;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  margin-top: 30px;
+}
+.game__button:focus {
+  border: none !important;
+  outline: none;
+}
+.hide {
+  display: none !important;
+}
+.game__div {
+  background-image: url(/images//3042.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: auto;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
+.car__img {
+  height: 100px;
+  width: 100px;
+  left: 0;
+  position: absolute;
+  bottom: 40px;
+  transition: all 1s linear;
+}
+.main__btn {
+  color: #fff;
+  padding: 5px 20px !important;
+  margin: 0px 20px;
+  background: #ff7f50;
+}
+#petroldiv {
+  display: flex;
+  /* justify-content: space-between; */
+  height: 67vh;
+  position: relative;
+  flex-flow: column-reverse;
+}
+.pump__position {
+  position: absolute;
+}
+.gas-pump {
+  color: rgb(255, 61, 61) !important;
+  font-size: 4rem;
+  animation: animate 2s linear infinite alternate-reverse both;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+ul li {
+  list-style: none;
+}
+h3 {
+  color: #ff7f50 !important;
+}
+.fa-car {
+  animation: caranimation 1s linear infinite alternate-reverse both;
+  -webkit-animation: caranimation 1s linear infinite alternate-reverse both;
+}
+@-webkit-keyframes caranimation {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes caranimation {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
